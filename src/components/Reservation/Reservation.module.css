@@ -1,0 +1,278 @@
+.reservation {
+  height: 100%;
+  width: 100%;
+}
+
+.condition {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 5% 0;
+  background: black;
+}
+
+.condition h2 {
+  font-size: 50px;
+  font-variant: small-caps;
+  font-weight: 900;
+  margin: 0;
+}
+
+.condition span {
+  color: yellow;
+}
+
+.condition h3 {
+  margin: 5px;
+  font-size: 25px;
+  font-variant: small-caps;
+  font-weight: 500;
+  letter-spacing: 7px;
+  color: yellow;
+}
+
+.condition .offerImages {
+  margin-top: 100px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.offers {
+  width: 100%;
+  display: flex;
+  height: 100%;
+}
+
+.offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  padding: 50px 5px 145px 0;
+}
+
+.offers .offerImage {
+  display: none;
+}
+
+.offer h2 {
+  margin: 0;
+  font-size: 45px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.offer h3 {
+  font-size: 40px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.offer .price {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.offer ul {
+  margin-top: 40px;
+}
+
+.offer li {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.offer li::after {
+  content: "";
+  margin: 10px 0;
+  display: block;
+  border-bottom: 1px solid white;
+}
+
+.offer .myPlace {
+  padding: 10px 70px;
+  font-size: 18px;
+  font-variant: small-caps;
+  font-weight: 900;
+  color: white;
+  background-color: var(--pink-color);
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.offer .information {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 50px;
+  background: transparent;
+  border: 1px solid var(--pink-color);
+  border-radius: 8px;
+  color: white ;
+}
+
+.day {
+  padding: 50px 5% 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  background-color: black;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: black;
+}
+
+.day .text h2 {
+  font-size: 45px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.day .text h3 {
+  font-size: 40px;
+  font-weight: 900;
+  color: yellow;
+  max-width: 60%;
+  margin: 0;
+}
+
+.day .text p {
+  font-size: 18px;
+  font-weight: 700;
+  max-width: 60%;
+}
+
+.day .text span {
+  color: yellow;
+}
+
+.formContainer {
+  background-color: yellow;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.formContainer .form {
+  width: 100%;
+  max-width: 880px;
+  padding: 0 5%;
+}
+
+.form form, .form .row {
+  width: 100%;
+}
+
+.form .row {
+  margin: 10px 0;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.form .input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form label {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.form .input input {
+  background: transparent;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.form .customInput {
+  display: flex;
+  gap: 10px;
+}
+
+.form .customInput input:first-child {
+  width: 30%;
+}
+
+.form .customInput input + input {
+  width: 100%;
+}
+
+.form button {
+  background-color: var(--pink-color);
+  padding: 7px 40px;
+  border: 1px solid var(--pink-color);
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 900;
+  font-variant: small-caps;
+}
+
+@media(max-width: 670px) {
+  .offer {
+    width: 100%;
+  } 
+
+  .offers {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .condition .offerImages {
+    display: none;
+  }
+
+  .offers .offerImage {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+  }
+
+  .day {
+    grid-template-columns: 1fr;
+  }
+
+  .day .text {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .day .text h2 {
+    font-size: 35px;
+  }
+
+  .day .text h3 {
+    font-size: 30px;
+    max-width: 100%;
+  }
+  
+  .day .text p {
+    max-width: 100%;
+  }
+
+  .form .row {
+    flex-direction: column;
+  }
+}

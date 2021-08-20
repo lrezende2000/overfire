@@ -1,0 +1,74 @@
+.stages {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 100px 5%;
+}
+
+.animation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.animation h2 {
+  font-size: 55px;
+  font-variant: small-caps;
+  color: white;
+  font-weight: 900;
+  margin: 0;
+}
+
+.animation h2 > span {
+  color: yellow;
+}
+
+.stagesContainer {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.stagesContainer .stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stagesContainer .stage p {
+  max-width: 90%;
+  font-size: 19px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 65px;
+}
+
+.bgOrange {
+  background: linear-gradient(180deg,rgba(0,0,0,1) 11%,rgba(231,70,31,1) 100%);
+}
+
+@media (max-width: 770px) {
+  .stagesContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .stagesContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .stages {
+    padding: 100px 0 0;
+  }
+
+  .animation {
+    padding: 0 5%;
+  }
+}

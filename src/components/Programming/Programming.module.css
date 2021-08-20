@@ -1,0 +1,55 @@
+.programming {
+  height: 100%;
+  width: 100%;
+  padding: 40px 5%;
+  background: linear-gradient(180deg, #161824 0%, #000 30%, #000 80%, #161824 100%);
+}
+
+.programming .title {
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.programming .title span {
+  color: yellow;
+}
+
+.programming .content {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  padding: 40px 0;
+}
+
+.programming .content .left p {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.programming .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.programming .footer p {
+  font-size: 30px;
+  font-variant: small-caps;
+  font-weight: 700;
+  letter-spacing: 10px;
+}
+
+.programming .footer span {
+  color: yellow;
+}
+
+@media (max-width: 800px) {
+  .programming .content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+}
